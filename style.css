@@ -69,7 +69,15 @@ h1, h2, h3 {
 }
 
 .company-name {
-    color: #666;
-    font-size: 0.9rem;
-    margin-top: -10px;
+    color: #000000;
+    font-size: 0.7rem;
+    margin-top: 10px;
+}
+
+
+.job-separator {
+    border: 0;
+    height: 1px;
+    background-color: #d3d3d3;
+    margin: 25px 0;
 }
