@@ -1,0 +1,75 @@
+JORGE ARROYO
+Staff Data Engineer | Data Platform Architect | MarTech Engineer | Snowflake & Cloud Data Expert
+Email: jemarroyo@gmail.com | Cell: +54 9 1162339162 | Ciudad Autónoma de Buenos Aires, Argentina 
+GitHub: github.com/jemarroyo 
+
+EXECUTIVE SUMMARY
+Staff Data Engineer and Data Platform Architect with 15+ years of experience designing, scaling, and operating production cloud-native data platforms across high-growth domains (Cybersecurity, MarTech, Fintech, Gaming). Expert in Snowflake architectures, Python, modern ELT (dbt, Airflow), and identity resolution engines. Proven track record of building reusable, low-maintenance ingestion frameworks that drastically slash development cycles, implementing rigorous DataOps/Data Quality tooling, and bridging the gap between deep infrastructure engineering and commercial product/analytics teams.
+
+CORE EXPERTISE
+• Architecture: Modern ELT/ETL, Data Platform Design, Data Contracts, Governance & Observability
+• Snowflake Mastery: Snowpark, Streams & Tasks, MERGE Optimization, Cost Optimization
+• Domain Specialization: Identity Resolution, MarTech Data Ecosystems, Cybersecurity Telemetry
+• Leadership: Cross-functional Technical Strategy, Team Management (up to 8), Mentoring & Training
+
+TECHNICAL SKILLS
+• Languages: Python, SQL, Bash, JavaScript
+• Cloud Platforms & Data Warehouses: Snowflake, Google Cloud Platform (BigQuery), AWS (AuroraDB)
+• Data Engineering & Ops: Apache Airflow, dbt, Airbyte, Fivetran, Gitlab/GitHub Actions, Docker, Kubernetes
+• Databases & Storage: PostgreSQL, MongoDB Atlas, Oracle, SQL Server, DB2
+• MarTech & Analytics: Segment, Braze, Mixpanel, Looker, Datadog, Tableau, Meta/Google Ads
+
+SELECTED ARCHITECTURE HIGHLIGHTS
+• Customer Identity Resolution Platform: Designed and deployed a deterministic identity resolution pipeline using optimized Snowflake MERGE architectures. Unified siloed CRM, product event, and marketing data into a high-performance canonical customer model.
+• Marketing Data Platform Framework: Architected a boilerplate ingestion framework integrating global SaaS APIs and advertising platforms into Snowflake, featuring automated schema validation and isolated CI/CD workflows.
+• Enterprise Data Platform Modernization: Led migration initiatives from legacy databases and ETL environments into cloud-native architectures, improving scalability, reliability, and analytical capabilities while maintaining business continuity.
+
+PROFESSIONAL EXPERIENCE
+
+CookUnity — MarTech Data Engineer | Feb 2025 – Present | Remote (New York, USA)
+Scope: Own architectural evolution of the core Marketing Data Platform powering Growth, Analytics, and Engagement teams.
+• Architected and maintained 70+ production pipelines, ingestion structures, and identity mapping workflows into Snowflake.
+• Designed and shipped a reusable core ingestion framework across 20+ external integrations, slashing new pipeline development time by 60%.
+• Implemented end-to-end operational monitoring using Datadog and automated Slack alerting, reducing mean-time-to-detection (MTTD) from hours to under 3 minutes.
+• Partnered closely with VP of Marketing and Engineering leads to align data platform capabilities with cross-functional product roadmaps.
+Stack: Snowflake, Python, SQL, Airflow, Datadog, Braze, Segment, Mixpanel, Meta/Google Ads
+
+Eclypsium — Senior Staff Data Engineer | Oct 2023 – Feb 2025 | Remote (Oregon, USA)
+Scope: Chaired architectural strategy for the Cybersecurity Analytics Platform, enabling petabyte-scale security telemetry analysis.
+• Engineered high-throughput batch and event pipelines processing complex security telemetry data into BigQuery.
+• Formulated modular, reusable ingestion patterns that accelerated third-party threat intelligence onboarding.
+• Developed Python-based threat intelligence scraping frameworks using Scrapy, standardizing unstructured datasets into clean, analytical target schemas.
+Stack: GCP, BigQuery, Apache Airflow, Kubernetes, Docker, Airbyte, PostgreSQL, MongoDB Atlas, Looker, Python
+
+VettedBiz / Visa Franchise — Data Analytics Manager | May 2022 – Oct 2023 | Remote (Miami, USA)
+Scope: Headed the combined Data Engineering and BI Analytics organization tasked with enterprise reporting and data products.
+• Managed and mentored a high-performing cross-functional team of 8 engineers and data analysts.
+• Overhauled legacy relational data structures into highly optimized dimensional models hosted on AWS.
+• Introduced enterprise data governance blueprints and automated validation testing to boost executive data trust metrics.
+Stack: AWS, AuroraDB, MariaDB, Python, Pentaho Data Integration, Jira, Confluence
+
+Big Fish Games — Senior Data Engineer | Mar 2021 – May 2022 | Remote (Seattle, USA)
+Scope: Drove technical engineering for planetary-scale gameplay analytics platforms.
+• Built and optimized high-volume Apache Airflow DAGs streaming large-scale mobile gaming telemetry.
+• Authored Python microservices and GCP Cloud Functions to scale asynchronous event payload processing.
+• Created underlying data models powering enterprise-wide Looker dashboards and critical KPI monitoring.
+Stack: Snowflake, Python, Airflow, GCP, Google Cloud Functions, SQL, Looker
+
+Banco Credicoop — Pentaho Integration Lead | Aug 2015 – Feb 2021 | Hybrid (Buenos Aires, Argentina)
+• Directed a technical team of 5 ETL developers delivering mission-critical integrations under strict regulatory frameworks.
+• Engineered secure financial data exchange fabrics linking internal bank legacy systems with federal networks.
+• Optimized query and indexing schemas across deep Oracle and DB2 instances, shaving hours off critical batch processes.
+Stack: Pentaho Data Integration, Oracle, DB2, Linux, Bash
+
+Assert Solutions — Project Manager / Lead BI Consultant | Nov 2010 – May 2015 | On-Site 
+• Managed and delivered complex BI and Big Data architecture consulting initiatives across telecom and public sectors in LATAM.
+• Conducted technical engineering bootcamps for enterprise teams across Ecuador, Colombia, and Chile.
+
+EARLIER EXPERIENCE
+ • Datalytics - Business Intelligence Architect
+ • SBI Technology - R&D Engineer
+ • Ingrocom / Freelance - Software Developer
+
+EDUCATION & CREDENTIALS
+• Bachelor of Science (B.S.) in Information Systems Engineering: Universidad Tecnológica Nacional (2001 – 2006)
+• Languages: Spanish (Native), English (C1 - Advanced Professional Proficiency)

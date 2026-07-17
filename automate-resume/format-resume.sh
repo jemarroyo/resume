@@ -1,0 +1,1 @@
+python format-resume.py -i /Users/jarroyo/dev/resume/automate-resume/input/cv-gemini.txt -o /Users/jarroyo/dev/resume/automate-resume/input/cv-gemini2.txt.html

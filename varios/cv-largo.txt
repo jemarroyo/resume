@@ -1,0 +1,260 @@
+JORGE ARROYO
+Staff Data Engineer | Data Platform Architect | Analytics Engineering Leader
+Buenos Aires, Argentina | Remote | GitHub: github.com/jemarroyo | email: jemarroyo@gmail.com | cellphone: +54 9 1162339162
+
+EXECUTIVE SUMMARY
+Staff Data Engineer with 20+ years of experience building large-scale cloud data platforms and analytics systems for cybersecurity, gaming, fintech, and MarTech organizations. Expert in Snowflake, Python, SQL, Apache Airflow, and modern ELT architectures, with a proven record of designing production-grade data platforms processing millions of events daily. Combines deep technical expertise with engineering leadership, enabling organizations to deliver reliable, scalable, and trusted data products.
+
+CORE COMPETENCIES
+Data Platform Architecture • Data Engineering • Python • SQL • Snowflake • Apache Airflow • GitHub Actions • ETL/ELT • Data Modeling • API Integrations • CI/CD • Observability • Data Quality • Marketing Analytics • Technical Leadership
+
+TECHNOLOGY STACK
+    • Languages: Pentaho, Python, SQL, Bash, JavaScript
+    • Cloud: AWS, GCP 
+    • Containers: Docker, Kubernetes, Portainer
+    • Warehouses: Snowflake, BigQuery
+    • Databases: PostgreSQL, MongoDB, MariaDB, Oracle, SQL Server, Mongo (Atlas)
+    • Orchestration: Airflow, GitHub Actions, dbt, Airbyte, Fivetran, Pentaho Data Integration (PDI),  Carte
+    • Analytics/Marketing Platforms: Braze, Segment, Mixpanel, Meta Ads, Google Ads, Looker, Datadog, Poplar, AppLovin, Datagrail, GTM, Meta Ads, Google Ads
+    • Reporting/Dashboards: Pentaho Dashboards, Looker, Tableau, Excel, Pentaho Reporting (PRD)
+    • Observability: Datadog
+
+TECHNICAL SKILLS: Python • SQL • Snowflake • Airflow • dbt • GitHub Actions • Docker • Kubernetes • AWS • GCP • BigQuery • PostgreSQL • API Integration • ETL • ELT • Data Modeling • Data Quality • Data Governance • CI/CD • Data Platform Architecture • Analytics Engineering • Observability • MarTech • Braze • Segment • Mixpanel
+
+SELECTED ENGINEERING PROJECTS
+    • Marketing Data Platform: Architected reusable ingestion frameworks integrating Braze, Segment, Mixpanel, Google Ads, Meta Ads, AppLovin, LiveIntent, Poplar, and partner APIs into Snowflake with automated monitoring, data quality controls, and CI/CD pipelines.
+    • Identity Resolution Platform: Designed deterministic customer identity resolution pipelines using Snowflake MERGE operations to unify CRM, transactional, product, and marketing datasets into a canonical customer model supporting downstream analytics.
+    • Enterprise Data Platform Modernization & Migrations: Led end-to-end migration projects from legacy databases, ETL platforms, and reporting environments to modern cloud-native data architectures, ensuring data integrity, minimizing production downtime, and improving scalability, performance, and maintainability.
+    • Data Platform Automation: Implemented GitHub Actions workflows for testing, deployment, scheduling, infrastructure automation, secret management, and operational monitoring, significantly reducing manual operational effort.
+    • Enterprise Systems Integration & Government Interfaces: Architected secure integration solutions enabling bi-directional synchronization between core enterprise platforms and external government agencies. Designed automated data exchange processes, validation controls, reconciliation workflows, and fault-tolerant interfaces supporting regulatory reporting, compliance, and mission-critical business operations.
+
+CARRER HIGHLIGHTS
+    • 20+ years in Data Engineering and Analytics
+    • Designed cloud-native data platforms supporting analytics across cybersecurity, gaming, banking, and MarTech.
+    • Staff-level engineer specializing in Snowflake, Airflow, Python, SQL
+    • Built deterministic customer identity resolution platform in Snowflake
+    • Led technical initiatives spanning engineering, analytics, product, and marketing in US-based remote organizations.
+    • Managed engineering teams of up to eight professionals while remaining hands-on in architecture and implementation.
+    • Expert in cloud-native ETL/ELT architecture and automation
+    • Specialized in Snowflake architecture, Apache Airflow orchestration, Python engineering, and CI/CD automation.
+
+PROFESSIONAL EXPERIENCE
+    CookUnity
+        Role: MarTech Engineer
+        Start: 2025-02    End: Present
+        Location: Remote (New York, USA)
+        Reports: Individual Contributor
+        Team Leadership: Led architecture decisions across Marketing, Analytics, Product, and Platform Engineering teams spanning four departments.
+        Scope: Marketing Data Platform
+        Reporting to: Growth Manager
+        Responsibilities:
+            • Designed and maintained 70+ production pipelines processing marketing events, transactional data, and customer profiles into Snowflake with automated quality validation and alerting.
+            • Partnered with Product, Analytics and Engineering stakeholders.
+            • Designed reliable cloud-native ETL/ELT workflows.
+            • Implemented Datadog monitoring and automated Slack alerts that reduced production incident detection time from hours to minutes.
+        Key Achievements:
+            • Developed reusable ingestion framework adopted across 20+ data integrations, reducing implementation time by approximately 60%.
+            • Reduced production incidents by implementing automated monitoring and alerting across 70+ production pipelines.
+            • Enabled trusted analytics through standardized data models.
+
+    Eclypsium
+        Role: Senior Staff Data Engineer
+        Start: 2023-10    End: 2025-02
+        Location: Remote (Portland, Oregón, USA)
+        Reports: Individual Contributor
+        Team Leadership: None (cross-functional technical leadership)
+        Reporting to: Data Director
+        Scope: Cybersecurity Analytics Platform
+        Responsibilities:
+            • Architected scalable production data pipelines.
+            • Partnered with Product, Analytics and Engineering stakeholders.
+            • Designed reliable cloud-native ETL/ELT workflows.
+            • Improved observability, automation and data quality.
+        Key Achievements:
+            • Built reusable platform components accelerating new integrations.
+            • Improved reliability through monitoring, alerting and automated deployments.
+            • Enabled trusted analytics through standardized data models.
+        Technologies: GCP • BigQuery • Looker • Kubernetes • Airflow • Airbyte • Docker • Scrapy • Shell Script • PostgreSQL • Mongo (Atlas) • JIRA • Confluence • GitLab • ETL/ELT • SQL • Data Integration • Data Cleansing • Web Scrapping
+
+    VettedBiz / Visa Franchise
+        Role: Data Analytics Manager
+        Start: 2022-05    End: 2023-10
+        Location: Remote (Miami, USA)
+        People Leadership: Managed 5 Data Analysts and 3 Developers
+        Reporting to: CTO
+        Scope: Enterprise Data Platform supporting Business Intelligence, Analytics, and Executive Decision-Making
+        Responsibilities:
+            • Architected scalable production data pipelines.
+            • Partnered with Product, Analytics and Engineering stakeholders.
+            • Designed reliable cloud-native ETL/ELT workflows.
+            • Improved observability, automation and data quality.
+        Key Achievements:
+            • Built reusable platform components accelerating new integrations.
+            • Improved reliability through monitoring, alerting and automated deployments.
+            • Enabled trusted analytics through standardized data models.
+        Technologies: Jira • Confluence • AWS • MariaDB • AuroraDB • Python 3.8 • Pentaho Data Integration
+
+    Big Fish Games
+        Role: Senior Data Engineer
+        Start: 2021-03    End: 2022-05
+        Location: Remote (Seattle, USA)
+        People Leadership: None (Technical Leadership)
+        Reporting to: Data Team Leader
+        Scope: Cloud Data Platform supporting Game Analytics, Data Quality, and Workflow Orchestration
+        Responsibilities:
+            • Architected and maintained production-grade Apache Airflow pipelines supporting analytics workloads.
+            • Designed scalable Python ETL processes to ingest and transform gameplay and operational datasets.
+            • Implemented automated data validation, quality controls, and monitoring to ensure trusted analytical data.
+            • Partnered with Analytics, Product, and Engineering teams to deliver reliable datasets for reporting and decision-making.
+            • Optimized ingestion workflows and improved pipeline performance across the cloud data platform.
+        Key Achievements:
+            • Improved reliability of production data pipelines through proactive monitoring and validation.
+            • Reduced operational overhead by automating workflow orchestration and data quality checks.
+            • Delivered standardized datasets powering Looker dashboards and business reporting.
+            • Built reusable ETL components that accelerated development of new data pipelines.
+        Technologies: Python • Apache Airflow • Snowflake • Google Cloud Platform • Google Cloud Functions • Looker • SQL • Shell Scripting
+        
+    Banco Credicoop
+        Role: Pentaho Integration Engineer 
+        Start: 2015-08    End: 2021-02
+        Location: Hybrid (Ciudad Autónoma de Buenos Aires, Argentina)
+        People Leadership: Lead 5 ETL developers
+        Scope: Mission-critical Banking Integration Platform supporting regulatory compliance and enterprise data exchange
+        Reporting to: Software Engineering Director
+        Responsibilities:
+            • Architected scalable production data pipelines.
+            • Partnered with Product, Analytics and Engineering stakeholders.
+            • Designed reliable cloud-native ETL/ELT workflows.
+            • Improved observability, automation and data quality.
+        Key Achievements:
+            • Built reusable platform components accelerating new integrations.
+            • Improved reliability through monitoring, alerting and automated deployments.
+            • Enabled trusted analytics through standardized data models.
+        Technologies: Linux • Bash Scripts • Pentaho Data Integration • Agile/Scrum • Oracle DB • DB2
+
+    Assert Solutions
+        Role: Project Manager
+        Start: 2013-08    End: 2015-05
+        Location: On-site (Ciudad Autónoma de Buenos Aires, Argentina)
+        People Leadership: Led multidisciplinary project teams (up to 10 consultants)
+        Scope: Business Intelligence, Big Data, and Enterprise Analytics Consulting
+        Reporting to: CTO
+        Responsibilities: 
+            • Directed end-to-end delivery of Business Intelligence and Big Data projects for enterprise clients.
+            • Managed project planning, pre-sales activities, budgeting, resource allocation, and customer engagements.
+            • Led solution architecture workshops and technical proposal development.
+            • Coordinated multidisciplinary delivery teams while ensuring scope, quality, timelines, and customer satisfaction.
+        Key Achievements:
+            • Successfully delivered enterprise analytics solutions for public sector and telecommunications clients.
+            • Designed a centralized analytics platform for the Argentine Chamber of Deputies, integrating speeches, attendance, and voting information into reporting dashboards.
+            • Contributed to a large-scale telecommunications Big Data initiative integrating heterogeneous enterprise systems into a unified analytical platform.
+            • Established project governance and delivery practices that improved execution consistency across consulting engagements.
+        Technologies: Hadoop • Spark • Python • PostgreSQL • MySQL • AWS • Linux • Bash • Jira • Microsoft Project 
+
+    Assert Solutions
+        Role: Senior Business Intelligence Consultant
+        Start: 2012-09    End: 2013-08
+        Location: Latin America
+        People Leadership: Technical Mentorship
+        Scope: Business Intelligence Consulting and Technical Enablement
+        Reporting to: Project Manager
+        Responsibilities:
+            • Provided consulting services for enterprise Business Intelligence implementations.
+            • Mentored customer technical teams adopting modern BI platforms.
+            • Delivered technical training programs across Latin America.
+        Key Achievements:
+            • Successfully trained engineering teams in Ecuador, Colombia, and Chile on the Pentaho platform.
+            • Accelerated BI adoption by establishing implementation best practices and technical guidance.
+            • Helped enterprise customers design scalable reporting and analytics solutions.
+        Technologies: Pentaho • Tableau • BusinessObjects • Crystal Reports • MicroStrategy • SQL • PostgreSQL • MySQL
+
+    Assert Solutions
+        Role: Team Leader
+        Start: 2010-11    End: 2012-08
+        Location: Buenos Aires, Argentina
+        People Leadership: Led BI implementation team (up to 4 consultants)
+        Scope: Enterprise Business Intelligence Delivery
+        Reporting to: Project Manager
+        Responsibilities:
+            • Led implementation of enterprise Business Intelligence projects across multiple industries.
+            • Coordinated technical teams throughout the project lifecycle.
+            • Designed ETL workflows, reporting solutions, and dimensional data models.
+            • Managed project execution, customer communication, and technical quality.
+        Key Achievements:
+            • Delivered end-to-end Business Intelligence solutions using the Pentaho platform.
+            • Implemented enterprise reporting integrated with custom ERP systems.
+            • Developed analytical data cubes supporting operational incident analysis and executive reporting.
+            • Improved project delivery consistency through technical leadership and mentoring.
+        Technologies: Pentaho Data Integration • Pentaho Reporting • Oracle • PostgreSQL • MySQL • Linux
+
+    Datalytics
+        Role: Business Intelligence Architect
+        Start: 2009-10    End: 2010-10
+        Location: On-Site (Ciudad Autónoma de Buenos Aires, Argentina)
+        People Leadership: Technical Leadership
+        Scope: Enterprise Business Intelligence Architecture
+        Reporting to: Project Manager
+        Responsibilities:
+            • Designed Business Intelligence architectures for enterprise customers.
+            • Defined infrastructure sizing, platform architecture, and performance optimization strategies.
+            • Supported large-scale analytics deployments for financial and insurance organizations.
+        Key Achievements:
+            • Architected BI platforms for enterprise clients including Banelco, AON, and Alico.
+            • Improved reporting platform performance through infrastructure optimization.
+            • Established scalable BI architectures supporting business-critical analytical workloads.
+        Technologies: Pentaho BI Suite • PostgreSQL • MySQL • RapidMiner • SAS • Linux
+
+        SBI Technology
+            Role: Research & Development Engineer
+            Start: 2008-01    End: 2009-08
+            Location: On-Site (Rosario, Santa Fe, Argentina)
+            People Leadership: Individual Contributor
+            Scope: Business Intelligence Research and Solution Development
+            Reporting to: CTO
+            Responsibilities:
+                • Evaluated emerging open-source Business Intelligence technologies.
+                • Developed proof-of-concept implementations for enterprise customers.
+                • Participated in customer solution delivery and technology adoption.
+            Key Achievements:
+                • Introduced modern BI technologies to multiple manufacturing and insurance customers.
+                • Delivered early-stage BI implementations that accelerated customer adoption.
+                • Built expertise in ETL, reporting, and data warehouse technologies.
+            Technologies: Pentaho • SQL Server • SSIS • Cognos • PostgreSQL • MySQL
+
+        Freelance / Self Employee
+            Role: Software Developer / Analyst
+            Start: 2006-03    End: 2007-12
+            Location: On-Site (Rosario, Santa Fe, Argentina)
+            Scope: Custom Business Applications
+            Reporting to: Stakeholders
+            Responsibilities:
+                • Designed, maintained, and enhanced enterprise applications for multiple customers.
+                • Gathered requirements and translated business needs into software solutions.
+            Key Achievements:
+                • Delivered custom software enhancements that improved customer operational processes.
+                • Established long-term relationships through successful project delivery.
+            Technologies: Visual Basic 6 • SQL Server • Microsoft Access • Excel
+
+        Ingrocom SRL
+            Role: Software Developer
+            Start: 2004-09    End: 2006-02
+            Location: On-Site (Rosario, Santa Fe, Argentina)
+            Scope: ERP Application Development
+            Reporting to: CTO
+            Responsibilities:
+                • Developed ERP modules from the ground up.
+                • Collaborated with business users to define functional requirements.
+                • Designed database structures and application interfaces.
+            Key Achievements:
+                • Contributed to the development of a custom ERP platform supporting core business operations.
+                • Delivered new modules and user interfaces that streamlined operational workflows.
+            Technologies: Visual Basic 6 • SQL Server • Microsoft Access • DOS Scripting
+
+LANGUAGES
+    Spanish: Native
+    English: Advanced (C1)
+
+EDUCATION
+    Bachelor's Degree in Systems Engineering
+    Universidad Tecnológica Nacional
+    Start: 2001-04    End: 2006-12

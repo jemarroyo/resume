@@ -1,0 +1,77 @@
+JORGE ARROYO
+Staff Data Engineer | Data Platform Architect | Analytics Engineering Leader
+Buenos Aires, Argentina | Remote | GitHub: github.com/jemarroyo | Email: jemarroyo@gmail.com | Cell: +54 9 1162339162
+
+EXECUTIVE SUMMARY
+Staff Data Engineer with 15+ years designing and building large-scale cloud data platforms and analytics infrastructure across cybersecurity, gaming, fintech, and MarTech. Expert in Snowflake, Python, SQL, Apache Airflow, and modern ELT architectures, with a proven track record of processing millions of daily events. Combines deep technical architecture expertise with cross-functional engineering leadership to deliver high-availability, production-grade data products.
+
+CORE COMPETENCIES
+Data Platform Architecture • Analytics Engineering • Modern ELT/ETL • Identity Resolution • Data Modeling • CI/CD Automation • Production Observability • Data Quality & Governance • MarTech Integrations • Cross-Functional Technical Leadership
+
+TECHNICAL SKILLS
+    Languages: Python, SQL, Bash, JavaScript, Visual Basic 6
+    Cloud & Warehouses: Snowflake, BigQuery, AWS, GCP
+    Orchestration & Integration: Apache Airflow, dbt, GitHub Actions, Airbyte, Fivetran, Pentaho (PDI)
+    Databases & Containers: PostgreSQL, MongoDB (Atlas), Oracle, SQL Server, MariaDB, Docker, Kubernetes
+    Analytics & MarTech Platforms: Segment, Braze, Mixpanel, Looker, Datadog, Tableau, Meta Ads, Google Ads
+
+SELECTED ENGINEERING PROJECTS
+    Marketing Data Platform: Architected a reusable ingestion framework integrating complex APIs (Braze, Segment, Mixpanel, Ad Networks) into Snowflake with automated monitoring, data quality controls, and CI/CD pipelines.
+    Identity Resolution Platform: Designed deterministic customer identity resolution pipelines using Snowflake MERGE operations to unify transactional, product, and marketing datasets into a single canonical customer model.
+    Enterprise Platform Modernization: Led end-to-end cloud migrations from legacy databases and legacy ETL environments to modern cloud-native architectures, ensuring data integrity with zero production downtime.
+
+PROFESSIONAL EXPERIENCE
+    CookUnity | MarTech Engineer | 2025-02 – Present | Remote (New York, USA)
+        Scope: Managed the core Marketing Data Platform, reporting directly to the Growth Manager.
+        Leadership: Led architecture decisions and alignment across Marketing, Analytics, Product, and Platform Engineering teams spanning four distinct departments.
+        Responsibilities & Achievements:
+            • Designed and maintained 70+ production pipelines migrating marketing events, transactional data, and customer profiles into Snowflake.
+            • Developed a reusable ingestion framework adopted across 20+ data integrations, reducing implementation time by 60%.
+            • Implemented Datadog monitoring and automated Slack alerting, reducing production incident detection time from hours to minutes.
+        Technologies: Snowflake, Python, SQL, Datadog, Braze, Segment, Mixpanel, Meta/Google Ads
+
+    Eclypsium | Senior Staff Data Engineer | 2023-10 – 2025-02 | Remote (Oregon, USA)
+        Scope: Owned the architectural strategy for the core Cybersecurity Analytics Platform, reporting to the Data Director.
+        Responsibilities & Achievements:
+            • Architected highly scalable production data pipelines to ingest complex, unstructured security telemetry data into BigQuery.
+            • Built reusable, modular platform components that accelerated the integration of new external security datasets.
+            • Designed robust web-scraping frameworks using Scrapy to ingest threat intelligence data, standardizing target schemas for analytical consumption.
+        Technologies: GCP, BigQuery, Looker, Kubernetes, Apache Airflow, Airbyte, Docker, Scrapy, PostgreSQL, MongoDB Atlas
+
+    VettedBiz / Visa Franchise | Data Analytics Manager | 2022-05 – 2023-10 | Remote (Miami, USA)
+        People Leadership: Managed a team of 5 Data Analysts and 3 Developers, reporting directly to the CTO.
+        Responsibilities & Achievements:
+            • Architected an Enterprise Data Platform supporting Business Intelligence, Analytics, and executive decision-making.
+            • Modernized legacy relational databases into highly optimized star schemas on AWS, improving query performance for BI tools.
+            • Established data governance and QA practices that reduced reporting anomalies, enabling higher executive trust in core platform metrics.
+        Technologies: AWS, MariaDB, AuroraDB, Python, Pentaho Data Integration, Jira, Confluence
+
+    Big Fish Games | Senior Data Engineer | 2021-03 – 2022-05 | Remote (Seattle, USA)
+        Scope: Technical leadership on Cloud Data Platforms supporting Game Analytics, Data Quality, and Orchestration.
+        Responsibilities & Achievements:
+            • Architected and maintained production-grade Apache Airflow pipelines ingestive of high-velocity gameplay and operational datasets.
+            • Designed scalable Python ETL processes and Google Cloud Functions to handle high-concurrency event ingestion into Snowflake.
+            • Delivered standardized datasets that powered Looker dashboards, reducing operational overhead via automated validation checks.
+        Technologies: Python, Apache Airflow, Snowflake, GCP, Google Cloud Functions, Looker, SQL, Bash
+
+    Banco Credicoop | Pentaho Integration Engineer / Lead | 2015-08 – 2021-02 | Hybrid (Buenos Aires, Argentina)
+        People Leadership: Led a team of 5 ETL Developers, reporting to the Software Engineering Director.
+        Responsibilities & Achievements:
+            • Architected a mission-critical banking integration platform supporting regulatory compliance and secure enterprise data exchanges.
+            • Designed bi-directional synchronization frameworks to interface securely with external government and financial regulatory systems.
+            • Optimized legacy Oracle and DB2 SQL execution paths, dramatically shrinking critical batch-processing windows.
+        Technologies: Linux, Bash, Pentaho Data Integration (PDI), Oracle DB, DB2
+
+    Assert Solutions | Project Manager / Lead Consultant | 2010-11 – 2015-05 | Buenos Aires & LatAm
+        Roles: Project Manager (2013-2015) | Senior BI Consultant (2012-2013) | Team Leader (2010-2012)
+        Responsibilities & Achievements:
+            • Directed end-to-end delivery of BI, Big Data, and Enterprise Analytics consulting projects for public sector and telecom clients.
+            • Designed a centralized analytics platform for the Argentine Chamber of Deputies, integrating political datasets into unified dashboards.
+            • Delivered technical enablement and Pentaho platform training programs to engineering teams across Ecuador, Colombia, and Chile.
+        Technologies: Hadoop, Spark, Python, Pentaho BI Suite, Tableau, Oracle, PostgreSQL
+
+    Earlier Experience: Business Intelligence Architect (Datalytics, 2009-2010) | R&D Engineer (SBI Technology, 2008-2009) | Software Developer (Freelance & Ingrocom, 2004-2007) — Details available upon request.
+
+EDUCATION & LANGUAGES
+    • Bachelor's Degree in Systems Engineering – Universidad Tecnológica Nacional (2001 – 2006)
+    • Languages: Spanish (Native) | English (Advanced - C1)
