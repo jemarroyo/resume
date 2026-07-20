@@ -3,294 +3,611 @@
     <link href="style.css" rel="stylesheet">
     <title>Jorge Arroyo | Staff Data Engineer</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        /* --- Global Reset & Base --- */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #f4f6f9;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+            line-height: 1.4;
+            color: #1e2a3a;
+            padding: 8px 20px 20px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* --- Main Resume Card --- */
+        #resume-wrapper {
+            max-width: 1200px;
+            width: 100%;
+            background: #ffffff;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            border-radius: 16px;
+            padding: 12px 30px 30px 30px;
+            transition: all 0.2s ease;
+        }
+
+        /* --- Header --- */
+        #header {
+            text-align: center;
+            margin-bottom: 12px;
+            border-bottom: 2px solid #e9edf2;
+            padding-bottom: 8px;
+        }
+
+        #header h1 {
+            font-size: 2.4rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: #0a1a2f;
+            margin-bottom: 0px;
+            line-height: 1.1;
+        }
+
+        #header .subhead {
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: #2c3e50;
+            letter-spacing: 0.3px;
+            background: #eef2f7;
+            display: inline-block;
+            padding: 1px 18px;
+            border-radius: 40px;
+            margin-top: 0px;
+        }
+
+        #header hr {
+            display: none;
+        }
+
+        /* --- Two-column layout --- */
+        main {
+            display: grid;
+            grid-template-columns: 34% 66%;
+            gap: 25px;
+            margin-top: 2px;
+        }
+
+        /* --- Left Column --- */
+        #mainLeft {
+            border-right: 1px solid #e2e8f0;
+            padding-right: 16px;
+        }
+
+        #mainLeft section {
+            margin-bottom: 18px;
+        }
+
+        #mainLeft h2 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #0a1a2f;
+            border-bottom: 2px solid #d0d9e6;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        #mainLeft p,
+        #mainLeft li {
+            font-size: 0.82rem;
+            color: #1e2a3a;
+            margin-bottom: 3px;
+        }
+
+        #mainLeft a {
+            color: #1a4972;
+            text-decoration: none;
+            transition: color 0.2s;
+        }
+
+        #mainLeft a:hover {
+            color: #0b2b4a;
+            text-decoration: underline;
+        }
+
+        #mainLeft .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            margin-bottom: 4px;
+        }
+
+        #mainLeft .contact-item i {
+            width: 16px;
+            font-size: 0.85rem;
+            color: #1a4972;
+            text-align: center;
+        }
+
+        /* Skills list */
+        .skills-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills-list li {
+            margin-bottom: 5px;
+            line-height: 1.5;
+        }
+
+        .skills-list b {
+            color: #0a1a2f;
+        }
+
+        /* Education & Certs */
+        .edu-item,
+        .cert-item {
+            margin-bottom: 5px;
+        }
+
+        .edu-item h3 {
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1px;
+        }
+
+        .cert-item p {
+            margin: 0;
+            font-size: 0.82rem;
+        }
+
+        /* --- Right Column --- */
+        #mainRight section {
+            margin-bottom: 18px;
+        }
+
+        #mainRight h2 {
+            font-size: 0.9rem;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            color: #0a1a2f;
+            border-bottom: 2px solid #d0d9e6;
+            padding-bottom: 3px;
+            margin-bottom: 8px;
+        }
+
+        /* About text */
+        #mainRight p {
+            font-size: 0.88rem;
+            color: #1e2a3a;
+            line-height: 1.5;
+        }
+
+        /* Highlights */
+        .highlights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .highlights-list li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+            font-size: 0.88rem;
+        }
+
+        .highlights-list b {
+            color: #0a1a2f;
+        }
+
+        /* --- Work Experience --- */
+        .job-entry {
+            margin-bottom: 16px;
+        }
+
+        .job-header {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 2px;
+            flex-wrap: wrap;
+        }
+
+        .company-logo {
+            width: 34px;
+            height: 34px;
+            object-fit: cover;
+            border-radius: 6px;
+            border: 1px solid #e2e8f0;
+            background: #f8fafc;
+            flex-shrink: 0;
+        }
+
+        .job-title {
+            font-size: 0.88rem;
+            font-weight: 700;
+            color: #0a1a2f;
+        }
+
+        .job-title a {
+            color: #0a1a2f;
+            text-decoration: none;
+        }
+
+        .job-title a:hover {
+            text-decoration: underline;
+        }
+
+        .job-meta {
+            font-size: 0.72rem;
+            font-weight: 500;
+            color: #1a4972;
+            background: #e8edf5;
+            padding: 1px 8px;
+            border-radius: 20px;
+            margin-left: 2px;
+            white-space: nowrap;
+            font-family: 'Consolas', 'Courier New', monospace;
+            letter-spacing: 0.2px;
+        }
+
+        .job-role {
+            font-weight: 600;
+            color: #0a1a2f;
+            font-size: 0.85rem;
+            margin-bottom: 2px;
+        }
+
+        .job-entry ul {
+            list-style: disc;
+            padding-left: 18px;
+            margin-top: 2px;
+        }
+
+        .job-entry ul li {
+            font-size: 0.82rem;
+            color: #1e2a3a;
+            margin-bottom: 1px;
+            line-height: 1.5;
+        }
+
+        .job-separator {
+            border: 0;
+            height: 1px;
+            background: linear-gradient(to right, #e2e8f0, transparent);
+            margin: 12px 0 14px 0;
+        }
+
+        /* --- Download Button --- */
+        .actions {
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .pdf-btn {
+            background: #0a1a2f;
+            color: white;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 40px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            transition: background 0.2s, transform 0.1s;
+            box-shadow: 0 4px 12px rgba(10, 26, 47, 0.15);
+        }
+
+        .pdf-btn:hover {
+            background: #1f3a5f;
+            transform: scale(1.01);
+        }
+
+        .pdf-btn i {
+            font-size: 1rem;
+        }
+
+        /* --- Responsive --- */
+        @media (max-width: 800px) {
+            main {
+                grid-template-columns: 1fr;
+                gap: 16px;
+            }
+
+            #mainLeft {
+                border-right: 0;
+                padding-right: 0;
+            }
+
+            #resume-wrapper {
+                padding: 10px 14px 20px 14px;
+            }
+
+            #header h1 {
+                font-size: 1.8rem;
+            }
+
+            .job-meta {
+                white-space: normal;
+                font-size: 0.7rem;
+            }
+        }
+
+        @media print {
+            body {
+                background: white;
+                padding: 0.02in;
+            }
+
+            #resume-wrapper {
+                box-shadow: none;
+                padding: 8px 10px 16px 10px;
+                border-radius: 0;
+                max-width: 100%;
+            }
+
+            .actions {
+                display: none;
+            }
+
+            .job-header {
+                break-inside: avoid;
+            }
+
+            .job-entry {
+                break-inside: avoid;
+            }
+        }
+    </style>
 </head>
-
 <body>
-    <header id="header">
-        <h1>JORGE ARROYO</h1>
-        <hr>
-        Staff Data Engineer | MarTech Engineer | Analytics Engineer
-        <hr>
-    </header>
-    
-    <main>
-        <article id="mainLeft">
+    <div id="resume-wrapper">
+        <header id="header">
+            <h1>JORGE ARROYO</h1>
+            <div class="subhead">Staff Data Engineer · MarTech · Analytics Engineer</div>
+        </header>
 
-            <section>
-                <h2>CONTACT</h2>
+        <main>
+            <!-- ========== LEFT COLUMN ========== -->
+            <article id="mainLeft">
+                <!-- CONTACT -->
+                <section>
+                    <h2>CONTACT</h2>
+                    <div class="contact-item">
+                        <i class="fa fa-envelope"></i>
+                        <a href="mailto:jemarroyo@gmail.com">jemarroyo@gmail.com</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-github"></i>
+                        <a href="https://github.com/jemarroyo">github.com/jemarroyo</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-linkedin"></i>
+                        <a href="https://linkedin.com/in/jemarroyo">linkedin.com/in/jemarroyo</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa fa-phone"></i>
+                        <a href="tel:+5491162339162">+54 9 11 6233-9162</a>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fab fa-whatsapp"></i>
+                        <a href="https://wa.me/5491162339162?text=Hi%20Jorge%2C%20I%20found%20your%20resume%20on%20GitHub." target="_blank">WhatsApp</a>
+                    </div>
+                </section>
 
-                <p>
-                    <i class="fa fa-envelope"></i>
-                    <a href="mailto:jemarroyo@gmail.com">jemarroyo@gmail.com</a>
-                </p>
-
-                <p>
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/jemarroyo">github.com/jemarroyo</a>
-                </p>
-
-                <p>
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://linkedin.com/in/jemarroyo">
-                        linkedin.com/in/jemarroyo
-                    </a>
-                </p>
-                <p>
-                        <i class="fa fa-phone" aria-hidden="true"></i>
-                        <a href="tel:+5491162339162">
-                            +54 9 11 6233-9162
-                        </a>
-                </p>
-                <p>
-                    <i class="fab fa-whatsapp" aria-hidden="true"></i>
-                    <a href="https://wa.me/5491162339162?text=Hi%20Jorge%2C%20I%20found%20your%20resume%20on%20GitHub." target="_blank">
-                        WhatsApp
-                    </a>
-                </p>
-            </section>
-
-            <section>
-                <h2>SKILLS</h2>
-
-                <p>
-                    Pentaho, Python, SQL, Snowflake, Airflow, GitHub Actions,
-                    BigQuery, PostgreSQL, MongoDB, AWS, GCP, Docker, Kubernetes, Linux,
-                    ETL/ELT, Data Modeling, Marketing Analytics, Observability,
-                    Data Governance, CI/CD, API Integrations,
-                    Datadog, Looker, Bash
-                </p>
-
-            </section>
-
-            <section>
-                <h2>EDUCATION</h2>
-
-                <h3>Bachelor of Science (B.S.) in Information Systems Engineering</h3>
-
-            </section>
-
-            <section>
-                <h2>CERTIFICATIONS</h2>
-
-                <p>AWS Cloud Practitioner</p>
-                <p>Google Cloud Platform - Looker ML Certified</p>
-
-            </section>
-
-        </article>
-
-        <article id="mainRight">
-
-            <section>
-                <h2>ABOUT</h2>
-
-                <p>
-                    Staff Data Engineer and Data Platform Architect with 15+ years of experience designing, scaling, and operating production cloud-native data platforms across high-growth domains (Cybersecurity, MarTech, Fintech, Gaming). Expert in Snowflake architectures, Python, modern ELT (dbt, Airflow), and identity resolution engines. Proven track record of building reusable, low-maintenance ingestion frameworks that drastically slash development cycles, implementing rigorous DataOps/Data Quality tooling, and bridging the gap between deep infrastructure engineering and commercial product/analytics teams.
-                </p>
-
-            </section>
-            <section>
-                <h2>CORE EXPERTISE</h2>
-
-                <p>
-                    <ul style="list-style-type: none; padding-left: 5px;">
-                        <li>Architecture: Modern ELT/ETL, Data Platform Design, Data Contracts, Governance & Observability</li>
-                        <li>Snowflake Mastery: Snowpark, Streams & Tasks, MERGE Optimization, Cost Optimization</li>
-                        <li>Domain Specialization: Identity Resolution, MarTech Data Ecosystems, Cybersecurity Telemetry</li>
-                        <li>Leadership: Cross-functional Technical Strategy, Team Management (up to 8), Mentoring & Training</li>
+                <!-- SKILLS -->
+                <section>
+                    <h2>SKILLS</h2>
+                    <ul class="skills-list">
+                        <li><b>Languages:</b> Pentaho, Python, SQL, Bash, JavaScript</li>
+                        <li><b>Cloud & Data Warehouses:</b> Google Cloud Platform, AWS, Snowflake, BigQuery</li>
+                        <li><b>Data Engineering & Ops:</b> Apache Airflow, dbt, Airbyte, Fivetran, GitLab/GitHub Actions, Docker, Kubernetes, API Integrations, CI/CD, Infrastructure as Code</li>
+                        <li><b>Databases & Storage:</b> PostgreSQL, MongoDB Atlas, Oracle, SQL Server, DB2</li>
+                        <li><b>MarTech & Analytics/Observability:</b> Segment, Braze, Poplar, Mixpanel, Looker, Datadog, Tableau, Meta/Google Ads</li>
                     </ul>
-            </section>
-            <section>
-                <h2>TECHNICAL SKILLS</h2>
+                </section>
 
-                <p>
-                    <ul style="list-style-type: none; padding-left: 5px;">
-                        <li>Languages: Python, SQL, Bash, JavaScript</li>
-                        <li>Cloud Platforms & Data Warehouses: Snowflake, Google Cloud Platform (BigQuery), AWS (AuroraDB)</li>
-                        <li>Data Engineering & Ops: Apache Airflow, dbt, Airbyte, Fivetran, Gitlab/GitHub Actions, Docker, Kubernetes</li>
-                        <li>Databases & Storage: PostgreSQL, MongoDB Atlas, Oracle, SQL Server, DB2</li>
-                        <li>MarTech & Analytics: Segment, Braze, Mixpanel, Looker, Datadog, Tableau, Meta/Google Ads</li>
+                <!-- EDUCATION -->
+                <section>
+                    <h2>EDUCATION</h2>
+                    <div class="edu-item">
+                        <h3>B.S. in Information Systems Engineering</h3>
+                        <p style="color:#4a5b6e; font-size:0.78rem;">Universidad Tecnológica Nacional · Argentina</p>
+                    </div>
+                </section>
+
+                <!-- CERTIFICATIONS -->
+                <section>
+                    <h2>CERTIFICATIONS</h2>
+                    <div class="cert-item"><p>AWS Cloud Practitioner</p></div>
+                    <div class="cert-item"><p>Google Cloud Platform – Looker ML Certified</p></div>
+                </section>
+            </article>
+
+            <!-- ========== RIGHT COLUMN ========== -->
+            <article id="mainRight">
+                <!-- ABOUT -->
+                <section>
+                    <h2>ABOUT</h2>
+                    <p>
+                        Staff Data Engineer and Data Platform Architect with 15+ years of experience designing, scaling, and operating production cloud-native data platforms across high-growth domains (Cybersecurity, MarTech, Fintech, Gaming). Expert in Snowflake architectures, Python, modern ELT (dbt, Airflow), and identity resolution engines. Proven track record of building reusable, low-maintenance ingestion frameworks that slash development cycles, implementing rigorous DataOps/Data Quality tooling, and bridging the gap between deep infrastructure engineering and commercial product/analytics teams.
+                    </p>
+                </section>
+
+                <!-- HIGHLIGHTS -->
+                <section>
+                    <h2>HIGHLIGHTS</h2>
+                    <ul class="highlights-list">
+                        <li><b>Customer Identity Resolution Platform:</b> Designed and deployed a deterministic identity resolution pipeline using optimized Snowflake MERGE architectures. Unified siloed CRM, product event, and marketing data into a high-performance canonical customer model.</li>
+                        <li><b>Marketing Data Platform Framework:</b> Architected a boilerplate ingestion framework integrating global SaaS APIs and advertising platforms into Snowflake, featuring automated schema validation and isolated CI/CD workflows.</li>
+                        <li><b>Enterprise Data Platform Modernization:</b> Led migration initiatives from legacy databases and ETL environments into cloud-native architectures, improving scalability, reliability, and analytical capabilities while maintaining business continuity.</li>
+                        <li><b>Leadership:</b> Cross-functional Technical Strategy, Team Management (up to 8), Mentoring &amp; Training.</li>
                     </ul>
-                </p>
-            </section>
+                </section>
 
-            <section>   
-                <h2>SELECTED ARCHITECTURE HIGHLIGHTS</h2>
+                <!-- WORK EXPERIENCE -->
+                <section>
+                    <h2>WORK EXPERIENCE</h2>
 
-                <p>
-                    <ul style="list-style-type: none; padding-left: 5px;">
-                        <li>Customer Identity Resolution Platform: Designed and deployed a deterministic identity resolution pipeline using optimized Snowflake MERGE architectures. Unified siloed CRM, product event, and marketing data into a high-performance canonical customer model.</li>
-                        <li>Marketing Data Platform Framework: Architected a boilerplate ingestion framework integrating global SaaS APIs and advertising platforms into Snowflake, featuring automated schema validation and isolated CI/CD workflows.</li>
-                        <li>Enterprise Data Platform Modernization: Led migration initiatives from legacy databases and ETL environments into cloud-native architectures, improving scalability, reliability, and analytical capabilities while maintaining business continuity.</li>
-                    </ul>
-                </p>
-            </section>
+                    <!-- CookUnity -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/cookunity.jpeg" alt="CookUnity" class="company-logo">
+                            <span class="job-title"><a href="https://www.cookunity.com/">CookUnity</a></span>
+                            <span class="job-meta">2025-02 / Present</span>
+                        </div>
+                        <div class="job-role">MarTech Engineer</div>
+                        <ul>
+                            <li>Own end-to-end marketing analytics pipelines using Python, GitHub Actions, and Snowflake.</li>
+                            <li>Integrate Braze, Segment, Mixpanel, Meta Ads, Google Ads, AppLovin, Impact, and Poplar data sources.</li>
+                            <li>Built monitoring, alerting, and observability solutions using Datadog and Slack.</li>
+                        </ul>
+                    </div>
 
-            <section>
-                <h2>WORK EXPERIENCE</h2>
-                <div class="company-title">
-                        <img src="assets/logos/cookunity.jpeg"
-                            alt="CookUnity"
-                            class="company-logo">
+                    <hr class="job-separator">
 
-                <h3>Staff Data Engineer, MarTech</h3>
-                </div>
-                <p class="company-name">
-                        CookUnity | Feb 2025 - Present
-                </p>
-                
-                <ul>
-                    <li>Own end-to-end marketing analytics pipelines using Python, GitHub Actions, and Snowflake.</li>
-                    <li>Integrate Braze, Segment, Mixpanel, Meta Ads, Google Ads, AppLovin, Impact, and Poplar data sources.</li>
-                    <li>Built monitoring, alerting, and observability solutions using Datadog and Slack.</li>
-                </ul>
+                    <!-- Eclypsium -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/eclypsium.jpeg" alt="Eclypsium" class="company-logo">
+                            <span class="job-title"><a href="https://eclypsium.com/">Eclypsium</a></span>
+                            <span class="job-meta">2023-12 / 2025-01</span>
+                        </div>
+                        <div class="job-role">Staff Data Engineer</div>
+                        <ul>
+                            <li>Designed scalable ETL/ELT pipelines on GCP using Airflow and BigQuery.</li>
+                            <li>Built data models and reporting solutions supporting cybersecurity analytics.</li>
+                            <li>Improved data accessibility and operational decision-making across teams.</li>
+                        </ul>
+                    </div>
 
-                <hr class="job-separator">
-                <div class="company-title">
-                        <img src="assets/logos/eclypsium.jpeg"
-                            alt="Eclypsium"
-                            class="company-logo">
+                    <hr class="job-separator">
 
-                <h3>Senior Data Engineer</h3>
-                </div>
-                <p class="company-name">
-                        Eclypsium | Nov 2023 - Jan 2025
-                </p>
-                
-                <ul>
-                    <li>Designed scalable ETL/ELT pipelines on GCP using Airflow and BigQuery.</li>
-                    <li>Built data models and reporting solutions supporting cybersecurity analytics.</li>
-                    <li>Improved data accessibility and operational decision-making across teams.</li>
-                </ul>
-                <hr class="job-separator">
+                    <!-- VettedBiz -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/vettedbiz.jpeg" alt="VettedBiz" class="company-logo">
+                            <span class="job-title"><a href="https://www.vettedbiz.com/">VettedBiz &amp; Visa Franchise</a></span>
+                            <span class="job-meta">2022-06 / 2023-11</span>
+                        </div>
+                        <div class="job-role">Data Analytics Manager</div>
+                        <ul>
+                            <li>Led data strategy, governance, and analytics initiatives.</li>
+                            <li>Managed analysts and coordinated cross-functional data projects.</li>
+                            <li>Reduced data-related incidents by 15% through governance improvements.</li>
+                        </ul>
+                    </div>
 
-                <div class="company-title">
-                        <img src="assets/logos/vettedbiz.jpeg"
-                            alt="VettedBiz"
-                            class="company-logo">
+                    <hr class="job-separator">
 
-                <h3>Data Analytics Manager</h3>
-                </div>
-                <p class="company-name">
-                        VettedBiz & Visa Franchise | Nov 2023 - Jan 2025
-                </p>
+                    <!-- Big Fish Games -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/bigfishgames.jpeg" alt="Big Fish Games" class="company-logo">
+                            <span class="job-title"><a href="https://www.bigfishgames.com/">Big Fish Games</a></span>
+                            <span class="job-meta">2021-03 / 2022-05</span>
+                        </div>
+                        <div class="job-role">Senior Data Engineer</div>
+                        <ul>
+                            <li>Implemented Apache Airflow pipelines and automated ingestion workflows.</li>
+                            <li>Built Looker dashboards and Snowflake data models.</li>
+                            <li>Improved reliability and monitoring of large-scale analytics systems.</li>
+                        </ul>
+                    </div>
 
-                <ul>
-                    <li>Led data strategy, governance, and analytics initiatives.</li>
-                    <li>Managed analysts and coordinated cross-functional data projects.</li>
-                    <li>Reduced data-related incidents by 15% through governance improvements.</li>
-                </ul>
-                <hr class="job-separator">
+                    <hr class="job-separator">
 
-                <div class="company-title">
-                        <img src="assets/logos/bigfishgames.jpeg"
-                            alt="Big Fish Games"
-                            class="company-logo">
+                    <!-- Banco Credicoop -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/bancocredicoop.jpeg" alt="Banco Credicoop" class="company-logo">
+                            <span class="job-title"><a href="https://www.bancocredicoop.coop/">Banco Credicoop</a></span>
+                            <span class="job-meta">2015-06 / 2021-02</span>
+                        </div>
+                        <div class="job-role">Data Technical Lead</div>
+                        <ul>
+                            <li>Led regulatory reporting and government integration initiatives.</li>
+                            <li>Designed enterprise ETL solutions using Pentaho, Oracle, DB2, and Mainframe systems.</li>
+                            <li>Produced technical specifications, testing plans, and implementation strategies.</li>
+                        </ul>
+                    </div>
 
-                <h3>Senior Data Engineer</h3>
-                </div>
-                <p class="company-name">
-                        Big Fish Games | Mar 2021 - May 2022
-                </p>
+                    <hr class="job-separator">
 
-                <ul>
-                    <li>Implemented Apache Airflow pipelines and automated ingestion workflows.</li>
-                    <li>Built Looker dashboards and Snowflake data models.</li>
-                    <li>Improved reliability and monitoring of large-scale analytics systems.</li>
-                </ul>
-                <hr class="job-separator">
+                    <!-- Assert Solutions -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/assertsolutions.jpeg" alt="Assert Solutions" class="company-logo">
+                            <span class="job-title"><a href="https://www.assertsolutions.com/">Assert Solutions</a></span>
+                            <span class="job-meta">2011-01 / 2015-05</span>
+                        </div>
+                        <div class="job-role">Business Intelligence Manager</div>
+                        <ul>
+                            <li>Managed BI consulting teams and project delivery.</li>
+                            <li>Developed enterprise reporting and data warehouse solutions.</li>
+                            <li>Led stakeholder engagement and BI strategy execution.</li>
+                        </ul>
+                    </div>
 
-                <div class="company-title">
-                        <img src="assets/logos/bancocredicoop.jpeg"
-                            alt="Banco Credicoop"
-                            class="company-logo">
+                    <hr class="job-separator">
 
-                <h3>Senior ETL Technical Lead</h3>
-                </div>
-                <p class="company-name">
-                        Banco Credicoop | May 2015 - Feb 2021
-                </p>
+                    <!-- Datalytics -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/datalytics.jpeg" alt="Datalytics" class="company-logo">
+                            <span class="job-title"><a href="https://lovelytics.com/">Datalytics</a></span>
+                            <span class="job-meta">2010-01 / 2010-12</span>
+                        </div>
+                        <div class="job-role">Pentaho Business Intelligence Consultant</div>
+                        <ul>
+                            <li>Designed data warehouses and enterprise BI solutions.</li>
+                            <li>Led performance optimization initiatives for large clients.</li>
+                            <li>Reduced rework by 50% and project costs by 25%.</li>
+                        </ul>
+                    </div>
 
+                    <hr class="job-separator">
 
-                <ul>
-                    <li>Led regulatory reporting and government integration initiatives.</li>
-                    <li>Designed enterprise ETL solutions using Pentaho, Oracle, DB2, and Mainframe systems.</li>
-                    <li>Produced technical specifications, testing plans, and implementation strategies.</li>
-                </ul>
-                <hr class="job-separator">
-                <div class="company-title">
-                        <img src="assets/logos/assertsolutions.jpeg"
-                            alt="Assert Solutions"
-                            class="company-logo">
+                    <!-- SBI Technology -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <img src="assets/logos/sbi.jpeg" alt="SBI Technology" class="company-logo">
+                            <span class="job-title"><a href="https://www.sbi-technology.com/">SBI Technology</a></span>
+                            <span class="job-meta">2008-01 / 2009-12</span>
+                        </div>
+                        <div class="job-role">Business Intelligence Developer</div>
+                        <ul>
+                            <li>Designed and implemented BI solutions for SMB customers.</li>
+                            <li>Worked with Pentaho, SQL Server, PostgreSQL, and Cognos.</li>
+                            <li>Participated in full project lifecycle delivery.</li>
+                        </ul>
+                    </div>
 
-                <h3>Business Intelligence Manager</h3>
-                </div>
-                <p class="company-name">
-                        Assert Solutions | Jan 2011 - May 2015
-                </p>
+                    <hr class="job-separator">
 
-                <ul>
-                    <li>Managed BI consulting teams and project delivery.</li>
-                    <li>Developed enterprise reporting and data warehouse solutions.</li>
-                    <li>Led stakeholder engagement and BI strategy execution.</li>
-                </ul>
-                <hr class="job-separator">
-                <div class="company-title">
-                        <img src="assets/logos/datalytics.jpeg"
-                            alt="Assert Solutions"
-                            class="company-logo">
+                    <!-- Ingrocom -->
+                    <div class="job-entry">
+                        <div class="job-header">
+                            <span class="job-title">Ingrocom SRL</span>
+                            <span class="job-meta">2004-09 / 2007-11</span>
+                        </div>
+                        <div class="job-role">Developer &amp; Data Analyst</div>
+                        <ul>
+                            <li>Developed ERP solutions from scratch.</li>
+                            <li>Built reporting systems and business process integrations.</li>
+                            <li>Worked with VB6, SQL Server, Crystal Reports, and Access.</li>
+                        </ul>
+                    </div>
 
-                <h3>Pentaho BI Consultant</h3>
-                </div>
-                <p class="company-name">
-                        Datalytics | Jan 2010 - Dec 2010
-                </p>
-
-
-                <ul>
-                    <li>Designed data warehouses and enterprise BI solutions.</li>
-                    <li>Led performance optimization initiatives for large clients.</li>
-                    <li>Reduced rework by 50% and project costs by 25%.</li>
-                </ul>
-
-                <hr class="job-separator">
-                <div class="company-title">
-                        <img src="assets/logos/sbi.jpeg"
-                            alt="SBI"
-                            class="company-logo">
-
-                <h3>Business Intelligence Developer</h3>
-                </div>
-                <p class="company-name">
-                        SBI Technology | Jan 2008 - Dec 2009
-                </p>
-
-                <ul>
-                    <li>Designed and implemented BI solutions for SMB customers.</li>
-                    <li>Worked with Pentaho, SQL Server, PostgreSQL, and Cognos.</li>
-                    <li>Participated in full project lifecycle delivery.</li>
-                </ul>
-                <hr class="job-separator">
-                <h3>Developer & Data Analyst</h3>
-
-                <p>
-                    Ingrocom SRL | Sep 2004 - Dec 2007
-                </p>
-
-                <ul>
-                    <li>Developed ERP solutions from scratch.</li>
-                    <li>Built reporting systems and business process integrations.</li>
-                    <li>Worked with VB6, SQL Server, Crystal Reports, and Access.</li>
-                </ul>
-
-            </section>
-
-        </article>
-    </main>
-</body>
-<div class="actions">
-        <button onclick="window.print()" class="pdf-btn">
-            <i class="fas fa-download"></i>Download Resume PDF</button>
+                </section>
+            </article>
+        </main>
     </div>
 
+    <div class="actions">
+        <button onclick="window.print()" class="pdf-btn">
+            <i class="fas fa-download"></i> Download Resume PDF
+        </button>
+    </div>
+</body>
 </html>
